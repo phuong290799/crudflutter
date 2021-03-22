@@ -61,7 +61,7 @@ class _AddEditPageState extends State<AddEditPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(editMode ? 'Update' :'Add Data'),),
+      appBar: AppBar(title: Text(editMode ? 'Cập nhật' :'Thêm sinh viên'),),
       body: ListView(
         children: <Widget>[
 

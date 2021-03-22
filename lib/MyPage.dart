@@ -24,10 +24,10 @@ class _MyPageState extends State<MyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Xem thong tin sinh vien'),
+        title: Text('Xem thông tin sinh viên'),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(Icons.add,size: 40,color: Colors.white,),
         onPressed: _addsv,
       ),
 
@@ -41,7 +41,7 @@ class _MyPageState extends State<MyPage> {
               itemBuilder: (context, index) {
                 List list = snapshot.data;
                 return ListTile(
-                  leading: GestureDetector(child: Icon(Icons.edit),
+                  leading: GestureDetector(child: Icon(Icons.edit,size: 30,color: Colors.blue,),
                     onTap: () {
                       Navigator.push(context, MaterialPageRoute(builder: (
                           context) =>
@@ -50,7 +50,7 @@ class _MyPageState extends State<MyPage> {
                     },),
                   title: Text(list[index]['lastname']),
                   subtitle: Text(list[index]['phone']),
-                  trailing: GestureDetector(child: Icon(Icons.delete),
+                  trailing: GestureDetector(child: Icon(Icons.delete,size: 30,color: Colors.blue,),
                     onTap: () {
                       setState(() {
                         var url = Uri.parse('http://192.168.1.8/flutter_crudmysql/delete.php');

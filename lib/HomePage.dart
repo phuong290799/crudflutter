@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(padding: const EdgeInsets.fromLTRB(60,50,60,50),
                 child: Container(
                   child: Text(
-                    "Chao mung ban den voi trang quan ly sinh vien",
+                    "Chào mừng bạn đến với hệ thống quản lý sinh viên",
                     style: TextStyle(
                       fontSize: 20,color: Colors.white,fontWeight: FontWeight.w500
                     ),
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
                   child: TextButton(
                     child: Text(
-                      "Xem danh sach sinh vien",
+                      "Xem danh sách sinh viên",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                   child: TextButton(
                     child: Text(
-                      "Them sinh vien",
+                      "Thêm sinh viên",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
